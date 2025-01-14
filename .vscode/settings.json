@@ -1,0 +1,9 @@
+{
+  "conventionalCommits.scopes": [
+    "workspace",
+    "backend",
+    "frontend",
+    "database",
+    "devops"
+  ]
+}
