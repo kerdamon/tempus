@@ -1,9 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.13.7/.schema/devbox.schema.json",
-  "packages": [
-    "python@latest",
-    "uv@latest"
-  ],
+  "packages": ["python@latest", "uv@latest"],
   "shell": {
     "init_hook": [
       "uv sync",
@@ -11,9 +8,7 @@
       "echo 'Devbox environment activated'"
     ],
     "scripts": {
-      "test": [
-        "echo \"Error: no test specified\" && exit 1"
-      ]
+      "test": ["echo \"Error: no test specified\" && exit 1"]
     }
   }
 }

@@ -1,16 +1,10 @@
 {
   "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.13.7/.schema/devbox.schema.json",
-  "packages": [
-    "nodejs@22"
-  ],
+  "packages": ["nodejs@22"],
   "shell": {
-    "init_hook": [
-      "echo 'Devbox environment activated'"
-    ],
+    "init_hook": ["echo 'Devbox environment activated'"],
     "scripts": {
-      "test": [
-        "echo \"Error: no test specified\" && exit 1"
-      ]
+      "test": ["echo \"Error: no test specified\" && exit 1"]
     }
   }
 }
