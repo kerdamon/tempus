@@ -1,5 +1,6 @@
 import js from '@eslint/js';
 import queryPlugin from '@tanstack/eslint-plugin-query';
+import routerPlugin from '@tanstack/eslint-plugin-router';
 import prettierPlugin from 'eslint-plugin-prettier';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
@@ -30,6 +31,7 @@ export default tseslint.config(
       'react-hooks': reactHooksPlugin,
       'react-refresh': reactRefreshPlugin,
       queryPlugin,
+      routerPlugin,
       prettierPlugin,
     },
     rules: {
@@ -41,6 +43,7 @@ export default tseslint.config(
         { allowConstantExport: true },
       ],
       ...queryPlugin.configs.recommended.rules,
+      ...routerPlugin.configs.recommended.rules,
       ...prettierPlugin.configs.recommended.rules,
     },
   }
