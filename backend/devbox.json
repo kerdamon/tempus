@@ -8,7 +8,7 @@
       "echo 'Devbox environment activated'"
     ],
     "scripts": {
-      "test": ["echo \"Error: no test specified\" && exit 1"]
+      "dev": "uv run fastapi dev"
     }
   }
 }
